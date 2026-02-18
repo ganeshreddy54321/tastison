@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastison</title>
+    <style>
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+        body{ 
+            margin: 0px 200px;
+            background-color: #fff5ee;
+        }
+        .login{
+            background-color:#ffffff;
+            border: 2px solid red;
+            height: 30px;
+            width: 60px;
+            border-radius: 5px;
+
+        }
+        label{
+            color:white; 
+            opacity: 0.7;
+        }
+        form input{
+            color:black; 
+            opacity: 0.4;
+        }
+        form{
+            border: 3px solid red;
+            width: 500px;
+            border-radius: 10px;
+            padding-left: 70px;
+            background-color: rgba(255,255,255,0.3);
+        }
+        
+        .first h3{
+            margin-right: 400px;
+            margin-top: 50px;
+            font-weight: 600;
+            font-size: 35px;
+            font-family: sans-serif;
+            color: white;
+            opacity: 0.6;
+        }
+        .content {
+            display: flex
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video autoplay loop muted plays-inline id="background-video">
+            <source src="video (1080p).mp4" type="video/mp4">
+        </video>
+    </div>
+    <section class="main">
+        <div class="main-a"><h1 style="font-weight: 900;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 40px;"><b style="color: red;" >Tasti</b>son</h1></div>
+        <div class="sign">
+        <a href="login2.html"><input class="login" type="submit" value="log in" name="log in"></a> 
+        </div>
+    </section>
+    <div class="content">
+        <div class="first">
+            <h3>Recognizing that food is more than sustenance—it is an expression of culture, heritage, and creativity.</h3>
+        </div>
+        <div class="second">
+        <form name="myform" action="food.html" onsubmit="return validateform()" >
+            <br>
+            <br>      
+            <label for="name"><b>ENTER YOUR NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+        
+            <input type="text" id="name" name="name" placeholder="enter your name" style="border-radius: 10px; background-color: white;border-style: none;">
+            <br>
+            <br>
+            <br>
+            <label for="number"><b>ENTER YOUR PHONE NUM:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            
+            <input type="text" id="number" name="num" placeholder="enter your phone num:" style="border-radius: 10px; background-color: white;border-style: none;">
+            <br><br><br>
+            <label for="email"><b>ENTER YOUR EMAIL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            
+            <input type="text" id="email" name="email"  placeholder="enter your name" style="border-radius: 10px; background-color: white;border-style: none;">
+            <br><br><br>
+            <label for="address"><b>ENTER YOUR HOUSE ADDRESS:</b></label>
+            
+            <input type="text" id="address" name="add" placeholder="enter your house address" style="border-radius: 10px; background-color: white;border-style: none;">
+            <br>
+            <br>
+            <br>
+            <label for="pincode"><b>ENTER YOUR PINCODE:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            
+            <input type="text" id="pincode" name="pin" placeholder="enter your pincode" style="border-radius: 10px; background-color: white;border-style: none;">
+            <br>
+            <br>
+            <br>
+            <label for="landmark"><b>ENTER YOUR LANDMARK:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></label>
+            
+            <input type="text" id="landmark" name="mark" placeholder="enter landmark" style="border-radius: 10px; background-color: white;border-style: none;">
+            <br>
+            <br>
+            <h4 style="color: white;opacity: 0.7;">GENDER:</h4>
+            <label for="radio1">Male:&nbsp;&nbsp;</label>
+            <input type="radio" id="radio1" name="radio">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="radio2">Female: &nbsp;&nbsp;</label>
+            <input type="radio" id="radio2" name="radio">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+            <label for="radio3">Transgender:&nbsp;&nbsp;</label>
+            <input type="radio" id="radio3" name="radio">
+            
+            <br>
+            <br>
+            <label for="datechecker1">date of birth:</label>
+            <input type="date" id="datechecker1" style="width: auto;border-radius: 10px; background-color: white;border-style: none;">
+            <br>
+            <br>
+            Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password" name="password" style="border-radius: 10px; background-color: white;border-style: none;" />
+            <br>
+            <br>
+            Re-enter Password:<input type="password" name="password2" style="border-radius: 10px; background-color: white;border-style: none;"/><br/>
+            
+            <br>
+            <input type="submit" value="sign in" style="background-color: red;text-align: center; border: 2px solid white;border-radius: 5px;margin-left: 170px;width: 80px;">
+            
+            <br>
+            <br>
+            <script type="text/javascript">
+                function validateform(){
+                var name=document.myform.name.value;
+                var num=document.myform.num.value;
+                var email=document.myform.email.value;
+                var add=document.myform.add.value;
+                var pin=document.myform.pin.value;
+                var mark=document.myform.mark.value;
+                var firstpassword=document.myform.password.value;
+                var secondpassword=document.myform.password2.value;
+
+                
+                if (name==null || name==""){
+                alert("name can't be blank");
+                return false;
+                }else if (num==null || num==""){
+                alert("phone no. can't be blank");
+                return false;
+                }else if(email==null || email==""){
+                alert("email can't be blank");
+                return false;
+                }else if (add==null || add==""){
+                alert("address can't be blank");
+                return false;
+                }else if (pin==null || pin==""){
+                alert("pincode can't be blank");
+                return false;
+                }else if (mark==null || mark==""){
+                alert("lankmark can't be blank");
+                return false;
+                }else if(firstpassword==secondpassword){
+                return true;
+                }
+                else{
+                alert("password must be same!");
+                return false;
+                }
+                }
+            </script>
+            
+        </form>
+        </div>
+        
+    </div>
+</body>
+</html>

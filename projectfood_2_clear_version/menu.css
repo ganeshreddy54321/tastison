@@ -1,0 +1,139 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px 200px;
+    background-color: #fff5ee;
+}
+
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+}
+.main .main-a h1{
+    font-weight: 900;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font: size 40px;
+}
+.main .main-a h1 b{
+    color: red;
+}
+.main ul{
+    display: flex;
+    list-style:none;
+    margin-right: 307px;
+    
+}
+.main ul input{
+    content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: 600;  
+    border: 1px solid whitesmoke; 
+    box-shadow:1px 2px  rgb(50, 53, 56);
+    
+}
+.main ul  #loc{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    cursor: pointer;
+    
+}
+.main ul #res{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.nav ul{
+    margin: 0px 150px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.nav ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: 550;
+    font-family: sans-serif;
+}
+.nav ul .active{
+    text-decoration: underline 5px red;
+   
+}
+
+.offers .image{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.offers .image img{
+    width: 100%;
+    height: 100%;
+}
+.content-1 .con-1{
+    display: flex;
+    justify-content: space-around;
+}
+.content-1 .con-1 img{
+    width: 80%;
+    height: 80%;
+}
+.content-1 .con-1 h3{
+    text-align: center;
+}
+
+.content-2 .con-2{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 30px;
+    gap: 50px
+}
+.content-2 .con-2 img{
+    width: 80%;
+    height: 80%;
+    border-radius: 50px;
+}
+.content-2 .con-2 h3{
+    text-align: center;
+}
+
+.items .itemsin{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px ;
+    justify-content: space-around;
+
+}
+.itemsin .menu-item img{
+    border-radius: 20px;
+    width:100%;
+    height: 50%;
+}
+.itemsin .menu-item{
+    width: 25%;
+    height: 60%;
+    background-color: white;
+    border-radius: 20px;
+    
+}
+.menu-item button{
+    border-radius: 50px;
+    border: 2px solid black;
+    margin-left: 150px;
+    width: 100px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

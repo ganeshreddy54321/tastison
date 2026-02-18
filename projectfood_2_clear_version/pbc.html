@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastison</title>
+    <style>
+        *,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0px 200px;
+            background-color: #fff5ee;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+
+        }
+        
+        .main ul{
+            display: flex;
+            list-style:none;
+            margin-right: 307px;
+        }
+        .main ul input{
+            content: center;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: 600;  
+            border: 1px solid whitesmoke; 
+            box-shadow:1px 2px  rgb(50, 53, 56);
+            
+            
+        }
+        .main ul  #loc{
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            cursor: pointer;
+            
+        }
+        .main ul #res{
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        }
+        .main .main-a h1{
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+        .main .main-a h1 b{
+            color: red;
+        }
+        .nav ul{
+            margin: 0px 150px;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .nav ul a{
+            text-decoration: none;
+            color: black;
+            font-weight: 550;
+            font-family: sans-serif;
+        }
+        .nav ul .active{
+            text-decoration: underline 5px red;
+        
+        }
+        .offers .image{
+            display:flex;
+            justify-content: space-around;
+            flex-direction: row;
+            column-gap: 20px;
+        }
+        .offers .image img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .items .itemsin{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px ;
+            justify-content: space-around;
+
+        }
+        .itemsin .menu-item img{
+            border-radius: 20px;
+            width:100%;
+            height: 50%;
+        }
+        .itemsin .menu-item{
+            width: 25%;
+            height: 60%;
+            background-color: white;
+            border-radius: 20px;
+           
+        }
+        .menu-item button{
+            border-radius: 50px;
+            border: 2px solid black;
+            margin-left: 150px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="main-a"><h1><b>Tasti</b>son</h1></div>
+        <ul>
+            <li><input type="text" id="loc" placeholder="location"></li>
+            <li><input type="text" id="res" placeholder="search for restaurant,cuisine or a dish"></li>
+        </ul>
+    </section>
+    <br>
+    <div class="nav">
+        <ul>
+            <li><a  href="food.html">Home</a></li>
+            <li><a   href="#"><a class="active" href="menu.html">Menu</a></a></li>
+            <li><a href="#"><a href="services.html">Services</a></a></li>
+            <li><a href="#"><a href="about.html">About Us</a></a></li>
+            
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="offers">
+        <h2 style="font-size: 30px;"><b>delights for the day</b></h2>
+        <br><br>
+        <div class="image">
+            <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/2b65d52386dd03bd57153d938c7645be" alt=""></div>
+            <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/3967580c0329555334072b18ba3c889c" alt=""></div>
+        </div>
+    </div>
+    <br><br>
+    <div class="items">
+        <h2 style="font-size: 30px;"><b>Non-veg foods</b></h2>
+        <br><br>
+        <div class="itemsin">
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/2b4f62d606d1b2bfba9ba9e5386fabb7" alt="" style="height: 200px;">
+                <h3>cheesy pizza</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+                
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">                
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/edf8410c87fc2a56e2e047bec146702b" alt="" style="height: 200px;">
+                <h3>haldiram's swets</h3>
+                <p>200</p>
+                <button>Add to Cart</button>
+                <br>
+                
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/bb7ae131544c7d37e10fc5faf76f09d6" alt="" style="height: 200px;" >
+                <h3>veg burgger</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/b1b35780a9b1dfeb26d680506d494eaa" alt="" style="height: 200px;">
+                <h3>Brooklyn ice cream</h3>
+                <p>200</p>
+                <br>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/c583ca6ce40b426797a78ae2ac91f2ec" alt="" style="height: 200px;">
+                <h3>chicken Shawarma</h3>
+               
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/41ed60ce5ed96b212bdf9c45a09b7e92" alt="" style="height: 200px;">
+                <h3>cheesecake</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/fecb83a55799f1a0d9b86a1a09c7630f" alt="" style="height: 200px;">
+                <h3>doument creamery</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/jfi4yidmw8g5iiw4qo2d" alt="" style="height: 200px;">
+                <h3>chocolate cake</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/f986df6f1a1fcf2ff24d2eaf44d570a7" alt="" style="height: 200px;">
+                <h3>Panneer cheesy pizza</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e33e1d3ba7d6b2bb0d45e1001b731fcf" alt="" style="height: 200px;">
+                <h3>big veg combo burgger</h3>
+               
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/zqfn83soh8opptkrpmsc" alt="" style="height: 200px;">
+                <h3>thick shakes</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/e6af7ef8b8ad04f12d748f144b602c0f" alt="" style="height: 200px;">
+                <h3>cream stone</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastison</title>
+    <style>
+        *,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            margin: 0px 200px;
+            background-color: #fff5ee;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+
+        }
+        
+        .main ul{
+            display: flex;
+            list-style:none;
+            margin-right: 307px;
+        }
+        .main ul input{
+            content: center;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-weight: 600;  
+            border: 1px solid whitesmoke; 
+            box-shadow:1px 2px  rgb(50, 53, 56);
+            
+            
+        }
+        .main ul  #loc{
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            cursor: pointer;
+            
+        }
+        .main ul #res{
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            cursor: pointer;
+        }
+        .main .main-a h1{
+            font-weight: 900;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+        .main .main-a h1 b{
+            color: red;
+        }
+        .nav ul{
+            margin: 0px 150px;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+        }
+        .nav ul a{
+            text-decoration: none;
+            color: black;
+            font-weight: 550;
+            font-family: sans-serif;
+        }
+        .nav ul .active{
+            text-decoration: underline 5px red;
+        
+        }
+        .offers .image{
+            display:flex;
+            justify-content: space-around;
+            flex-direction: row;
+            column-gap: 20px;
+        }
+        .offers .image img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .items .itemsin{
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 50px ;
+            justify-content: space-around;
+
+        }
+        .itemsin .menu-item img{
+            border-radius: 20px;
+            width:100%;
+            height: 50%;
+        }
+        .itemsin .menu-item{
+            width: 25%;
+            height: 60%;
+            background-color: white;
+            border-radius: 20px;
+           
+        }
+        .menu-item button{
+            border-radius: 50px;
+            border: 2px solid black;
+            margin-left: 150px;
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="main">
+        <div class="main-a"><h1><b>Tasti</b>son</h1></div>
+        <ul>
+            <li><input type="text" id="loc" placeholder="location"></li>
+            <li><input type="text" id="res" placeholder="search for restaurant,cuisine or a dish"></li>
+        </ul>
+    </section>
+    <br>
+    <div class="nav">
+        <ul>
+            <li><a  href="food.html">Home</a></li>
+            <li><a   href="#"><a class="active" href="menu.html">Menu</a></a></li>
+            <li><a href="#"><a href="services.html">Services</a></a></li>
+            <li><a href="#"><a href="about.html">About Us</a></a></li>
+            
+        </ul>
+    </div>
+    <br><br><br>
+    <div class="offers">
+        <h2 style="font-size: 30px;"><b>special non-veg deals for you</b></h2>
+        <br><br>
+        <div class="image">
+            <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/21e0a04c73c8b39b5616799e219ce032" alt=""></div>
+            <div><img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_850,h_504/rng/md/carousel/production/1095c62afafd16a1e99289880fddfc5b" alt=""></div>
+        </div>
+    </div>
+    <br><br>
+    <div class="items">
+        <h2 style="font-size: 30px;"><b>Non-veg foods</b></h2>
+        <br><br>
+        <div class="itemsin">
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/pvjlvadd7eejccruabh3" alt="" >
+                <h3>chicken biryani</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+                
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/tw4ytwle8yommmgdy4b0" alt="" style="height: 200px";>
+                <h3>dum biryani</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+                <br>
+                
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/lu7b9y7xps4icwn6xzfj" alt="" style="height: 200px;" >
+                <h3>KFC spicy chicken</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/yxuofhzim4owcxyb8upm" alt="" >
+                <h3>fish fry</h3>
+                
+                <p>200</p>
+                <br>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/oxeyyzqju60tm4ccensx" alt="" style="height: 200px;">
+                <h3>chicken fried rice</h3>
+               
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/jsv4qlq9g4ktvvbjebd7" alt="" style="height: 200px;">
+                <h3>mandi</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/az9ex7bhar9uwg5yhcdm" alt="" style="height: 200px;">
+                <h3>non-veg combo</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/acwvb2nr6kriqnb5finh" alt="" style="height: 200px;">
+                <h3>mutton curry</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/tw4ytwle8yommmgdy4b0" alt="" style="height: 200px;">
+                <h3>fried piece biryani</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/jk1nao7hohp8lreel9vh" alt="" >
+                <h3>chilly chicken leg fry</h3>
+               
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/9ae730c95d13d6e26bf0bc9d69119a38" alt="" style="height: 200px;">
+                <h3>fry fish biryani</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            <div class="menu-item">
+                <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/596359faed3f8b42bd882233e11c6075" alt="" style="height: 200px;">
+                <h3>ralaseema chicken curry</h3>
+                
+                <p>200</p>
+                <button>Add to Cart</button>
+            </div>
+            <br>
+            <br>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

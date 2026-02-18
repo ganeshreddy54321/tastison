@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastison</title>
+    <style>
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+        *,::after,::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{ 
+            margin: 0px 200px;
+            background-color: #fff5ee;
+        }
+        .login{
+            background-color:#ffffff;
+            border: 2px solid red;
+            height: 30px;
+            width: 60px;
+            border-radius: 5px;
+
+        }
+        .signin{
+            background-color: red;
+            color:#ffffff;
+            outline: none;
+            border: 2px solid white;
+            border-radius: 5px;
+            height: 30px;
+            width: 60px;
+        }
+        .food{
+            background-color: rgba(0,0,0);
+            color: white;
+            border-radius: 5px;
+            height: 30px;
+            width: 60px;
+        }
+        .first h3{
+            margin-right: 400px;
+            margin-top: 100px;
+            font-weight: 600;
+            font-size: 35px;
+            font-family: sans-serif;
+            color: white;
+            opacity: 0.6;
+        }
+        /* .con{
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-top: 300px;
+            background-color: #e9e6e6;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .team-section {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        } */
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video autoplay loop muted plays-inline id="background-video">
+            <source src="video (1080p).mp4" type="video/mp4">
+        </video>
+    </div>
+    <section class="main">
+        <div class="main-a"><h1 style="font-weight: 900;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 40px;"><b style="color: red;" >Tasti</b>son</h1></div>
+        <div class="sign">
+        <a href="login2.html"><input class="login" type="submit" value="log in" name="log in"></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="signin.html"><input class="signin" type="submit" value="Sign in" name="log in"></a> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="food.html"><input class="food" type="submit" value="skip" name="log in"></a> 
+        </div>
+
+    </section>
+    
+    <div class="first">
+        <h3>Food, in the end, in our own tradition, is something holy. It's not about nutrients and calories. It's about sharing. It's about honesty. It's about identity.</h3>
+    </div>
+    <br><br>
+    <!-- <section class="con">
+        <h2>How to Reach Us:</h2>
+        <h4>Customer Support:</h4>
+        <p>
+            Our dedicated customer support team is available 24/7 to assist you. Feel free to reach out with any questions or concerns, and we'll ensure a prompt and helpful response.
+        </p>
+        <ul>
+            <li>
+                Email: support@tastison.com
+            </li>
+            <li>
+                Phone: +911800121368
+            </li>
+        </ul>
+        <h4>
+            Connect Online:
+        </h4>
+        <p>
+          <ul>
+            <li>
+                Facebook   : facebook.com/tastison
+            </li>
+            <li>
+                Instagram  : instagram.com/tastison
+            </li>
+            <li>
+                Twitter[X] : twitter.com/tastison 
+            </li>
+          </ul>  
+        </p>
+    </section> -->
+
+</body>
+</html>

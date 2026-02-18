@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tastison</title>
+    <style>
+        #video-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+        }
+
+        #background-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center top;
+        }
+        body{
+            margin: 0px 200px;
+            background-color: #fff5ee;
+        }
+        .main{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+        }
+        .signin{
+            background-color: red;
+            color:#ffffff;
+            outline: none;
+            border: 1px solid white;
+            border-radius: 5px;
+            height: 30px;
+            width: 60px;
+        }
+        .log{
+            margin-top: 100px;
+            margin-right: 300px;
+            margin-left: 300px;
+            padding-left: 50px;
+            border: 3px solid red;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.4);
+        }
+        .first h3{
+            margin-right: 600px;
+            margin-top: 50px;
+            font-weight: 600;
+            font-size: 35px;
+            font-family: sans-serif;
+            color: white;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <video autoplay loop muted plays-inline id="background-video">
+            <source src="video (1080p).mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <section class="main">
+        <div class="main-a"><h1 style="font-weight: 900;font-family: Georgia, 'Times New Roman', Times, serif;font-size: 40px;"><b style="color: red;">Tasti</b>son</h1></div>
+        <a href="signin.html"><input class="signin" type="submit" value="Sign in" name="log in"></a> 
+    </section>
+    <br><br><br>
+    <div class="first">
+        <h3>Laughter is brightest in the place where the food is.</h3>
+    </div>
+    <div class="log">
+        <form name="myform" action="food.html" onsubmit="return validateform()" >
+       
+            <br>
+            <br>      
+            <label for="email" style="color:white; opacity: 0.7;"><b>ENTER YOUR EMAIL:</b> &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="text" id="email" name="name" placeholder="enter your email" style="border-radius: 10px; background-color: rgba(255,255,255,0.5);border: none;">
+            <br>
+            <br>
+            <br>
+            <label for="password" style="color:white; opacity: 0.7;"><b>ENTER YOUR PASSWORD:</b></label>
+            <input type="password" id="password"  name="password" placeholder="enter your password" style="border-radius: 10px; background-color: rgba(255,255,255,0.5);border:none;">
+            <br><br><br>
+            <a href="food.html"><input type="submit" value="register" style="background-color: red;border: none; border-radius: 10px; width: 150px; margin-left: 110px;"><a href="food.html" style="text-decoration: none; text-align: center;"></a>
+            <!-- <button type="submit"  value="register" style="background-color: red;border: none; border-radius: 10px; width: 150px; margin-left: 110px;"><a href="food.html" style="text-decoration: none; text-align: center;">login</a></button> -->
+            <br>
+            <p><h3 style="margin-left: 60px;">if you are not registered, <a href="signin.html" style="text-decoration: none;color: red;opacity: 0.8;">sign in</a></h3></p> 
+            <script>
+                function validateform(){
+                var name=document.myform.name.value;
+                var password=document.myform.password.value;
+                
+                if (name==null || name==""){
+                alert("email can't be blank");
+                return false;
+                }else if(password.length<6){
+                alert("Password must be at least 6 characters long.");
+                return false;
+                }
+                }
+            </script>
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- <html>
+<body>
+<script>
+function validateform(){
+var name=document.myform.name.value;
+var password=document.myform.password.value;
+
+if (name==null || name==""){
+alert("Name can't be blank");
+return false;
+}else if(password.length<6){
+alert("Password must be at least 6 characters long.");
+return false;
+}
+}
+</script>
+<body>
+<form name="myform" action="asp.html" onsubmit="return validateform()" >
+Name: <input type="text" name="name"><br/>
+Password: <input type="password" name="password"><br/>
+<input type="submit" value="register">
+</form>
+</body> -->
+<!-- </html> -->
