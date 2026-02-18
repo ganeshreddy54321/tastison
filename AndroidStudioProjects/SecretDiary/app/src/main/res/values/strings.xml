@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">WhisperDiary</string>
+    <string name="app_name2">change voice password</string>
+    <string name="microphone_icon_desc">Microphone icon</string>
+    <string name="app_name3">YourAppName</string>
+
+    <string name="back_button_description">Back button to navigate back</string>
+    <string name="right_arrow_description">Navigate to next screen</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="profile_icon_description">User profile picture</string>
+    <string name="user_name">YOUR NAME HERE</string>
+    <string name="edit_profile_button">Edit Profile</string>
+
+    <string name="night_mode_icon_description">Night mode icon</string>
+    <string name="night_mode_text">Night Mode</string>
+    <string name="night_mode_switch_description">Toggle night mode on or off</string>
+
+    <string name="notification_icon_description">Notification bell icon</string>
+    <string name="notifications_text">Notifications</string>
+    <string name="notifications_switch_description">Toggle notifications on or off</string>
+
+    <string name="voice_lock_icon_description">Voice lock icon</string>
+    <string name="voice_lock_text">Voice Lock</string>
+    <string name="voice_lock_switch_description">Toggle voice lock on or off</string>
+
+    <string name="security_icon_description">Security shield icon</string>
+    <string name="security_privacy_text">Security &amp; privacy</string>
+
+    <string name="text_size_icon_description">Text size icon</string>
+    <string name="text_size_text">Text Size</string>
+
+    <string name="language_icon_description">Language icon</string>
+    <string name="change_language_text">Change Language</string>
+
+    <string name="export_entries_icon_description">Export entries icon</string>
+    <string name="export_entries_text">Export entries</string>
+
+    <string name="send_message_icon_description">Message icon</string>
+    <string name="send_message_text">Send us a message</string>
+
+    <string name="about_us_icon_description">Information icon</string>
+    <string name="about_us_text">About us</string>
+
+    <string name="logout_icon_description">Logout icon</string>
+    <string name="logout_text">Logout</string>
+
+
+
+        <string name="edit_profile_button_text">Edit Profile</string>
+        <string name="save_name_button_text">Save Name</string>
+
+
+        <string name="send_message_activity_title">Send Us a Message</string>
+        <string name="subject_hint">Subject</string>
+        <string name="message_hint">Your Message</string>
+        <string name="send_button_text">Send Message</string>
+        <string name="email_validation_error">Please enter both subject and message.</string>
+        <string name="no_email_app_found">No email app found.</string>
+        <string name="chooser_title_send_email">Send email using...</string>
+        <string name="rate_experience_label">Rate your experience:</string>
+
+        <string name="text_size_activity_title">Text Size Settings</string>
+        <string name="preview_text">This is a preview of your chosen text size. All text in the app will adjust accordingly.</string>
+        <string name="small_text">Small</string>
+        <string name="medium_text">Medium</string>
+        <string name="large_text">Large</string>
+        <string name="custom_text">Custom</string>
+        <string name="preview_text_label">Live Preview</string> <string name="Edit_Profile">Edit Profile</string>
+
+        <string name="section_authentication">Authentication</string>
+        <string name="password_pin_lock">Password / PIN Lock</string>
+        <string name="biometric_lock">Biometric Lock (Fingerprint / Face ID)</string>
+        <string name="pattern_lock">Pattern Lock</string>
+        <string name="idle_timeout_value">1 min</string>
+        <string name="intruder_selfie">Intruder Selfie (Enable if 3+ failed attempts)</string>
+
+        <string name="section_privacy">Privacy</string>
+        <string name="change_icon_name">Change App Icon/Name</string>
+        <string name="app_icon_name_placeholder">Notes</string>
+        <string name="set_fake_password">Set Fake Password</string>
+        <string name="enable_self_destruct">Enable Self-Destruct</string>
+        <string name="self_destruct_warning">⚠️ Warn: Deletes data after X fails</string>
+        <string name="no_data_collection">No Data Collection</string>
+        <string name="no_data_message">We respect your privacy. No data leaves your device.</string>
+
+        <string name="save_settings">Save Settings</string>
+
+        <string name="about_whisperdiary">About WhisperDiary</string>
+        <string name="app_tagline">“Your voice, your private world.”</string>
+        <string name="app_icon_desc">WhisperDiary App Icon</string>
+        <string name="back_button_desc">Back Button</string>
+        <string name="about_the_app_header">About the App</string>
+        <string name="app_description">WhisperDiary is a voice-based personal diary app where your thoughts are safe, secure, and always with you. Speak your mind, and let your diary listen.</string>
+        <string name="built_by_us_header">Built By Us</string>
+        <string name="built_by_us_description">We are five friends passionate about technology and mental wellness. WhisperDiary is our way of helping people express themselves freely and privately.</string>
+        <string name="our_team_header">Our Team</string>
+        <string name="team_ganesh">Ganesh Puttur – Backend Developer &amp; UI/UX Designer</string>
+        <string name="team_nithin">Nithin – Voice Integration</string>
+        <string name="team_uday">Uday Kiran – UI/UX Designer</string>
+        <string name="team_rakesh">Rakesh – Backend Developer</string>
+        <string name="team_shahid">Shahid – Testing &amp; Deployment</string>
+        <string name="contact_us_header">Contact Us</string>
+        <string name="contact_suggestions">Have suggestions or need help?</string>
+        <string name="contact_email">whisperdiaryteam@gmail.com</string>
+        <string name="email_icon_desc">Email Icon</string>
+        <string name="version_header">Version</string>
+        <string name="app_version">v1.0.0 – July 2025</string>
+        <string name="legal_header">Legal</string>
+        <string name="privacy_policy">Privacy Policy</string>
+        <string name="terms_of_use">Terms of Use</string>
+
+    <string name="security_settings_title">Security and Privacy Settings</string>
+
+
+</resources>

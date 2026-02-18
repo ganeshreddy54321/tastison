@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:background="@android:color/white">
+
+    <!-- Entry Title -->
+
+    <TextView
+        android:id="@+id/textcolor"
+        android:layout_width="344dp"
+        android:layout_height="58dp"
+        android:fontFamily="sans-serif"
+        android:gravity="left"
+        android:text="WhisperDiary"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <!-- Date Display -->
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:background="@android:drawable/edit_text"
+        android:hint="Entry Title"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Date:  "
+
+        android:focusable="false"
+        android:clickable="true"
+        android:textSize="14sp"
+        android:textColor="#666"
+        app:layout_constraintTop_toBottomOf="@id/editTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+
+    <!-- Diary Content -->
+<!--    <EditText-->
+<!--        android:id="@+id/editContent"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_marginBottom="90dp"-->
+<!--        android:background="@drawable/roundback"-->
+<!--        android:backgroundTint="#B4F4B6"-->
+<!--        android:elevation="10dp"-->
+<!--        android:gravity="top"-->
+<!--        android:hint="Write your thoughts here..."-->
+<!--        android:inputType="textMultiLine"-->
+<!--        android:outlineSpotShadowColor="@color/my_green"-->
+<!--        android:padding="10dp"-->
+<!--        android:textSize="16sp"-->
+<!--        app:layout_constraintBottom_toTopOf="@id/btnSave"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/textDate" />-->
+
+    <LinearLayout
+        android:id="@+id/voiceInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/textDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/editContent"
+            android:layout_width="334dp"
+            android:layout_height="334dp"
+            android:layout_weight="1"
+            android:background="@drawable/roundback"
+            android:backgroundTint="#B4F4B6"
+            android:elevation="10dp"
+            android:gravity="top"
+            android:hint="Write your thoughts here..."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/micIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:src="@android:drawable/ic_btn_speak_now"
+            android:contentDescription="Voice input"
+            android:backgroundTint="@color/black"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <!-- "Save as" label -->
+    <TextView
+        android:id="@+id/saveAsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save as"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/voiceInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center" />
+
+    <!-- Two horizontal buttons: Private and Public -->
+    <LinearLayout
+        android:id="@+id/saveOptionsLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/saveAsText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnPrivate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/my_green"
+            android:background="@drawable/buttonback"
+            android:text="Daily reflections"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/btnPublic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Personal"
+            android:backgroundTint="@color/my_green"
+            android:background="@drawable/buttonback"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- Save Entry Button below -->
+    <Button
+        android:id="@+id/btnCreative"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="24dp"
+        android:text="Creative ideas"
+        android:textColor="@android:color/white"
+        android:background="@drawable/buttonback"
+        android:backgroundTint="#13DC1B"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/saveOptionsLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+    <!--    <Button-->
+<!--        android:id="@+id/btnSave"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="52dp"-->
+<!--        android:backgroundTint="#13DC1B"-->
+<!--        android:text="Save Entry"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+    <!-- Save Button -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
